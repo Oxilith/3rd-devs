@@ -73,7 +73,7 @@ app.post('/api/chat', async (req, res) => {
       { role: 'system', content: promptWithResults, name: 'Alice' },
       ...messages as ChatCompletionMessageParam[]
     ];
-    const completion = await openaiService.completion(allMessages, "gpt-4o", false);
+    const completion = await openaiService.completion(allMessages, "gpt-4o-mini", false);
 
     return res.json(completion);
   } catch (error) {

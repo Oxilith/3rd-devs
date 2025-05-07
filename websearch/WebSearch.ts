@@ -60,7 +60,7 @@ export class WebSearchService {
       role: "user",
       content: userMessage
     };
-
+    
     try {
       const response = await this.openaiService.completion([systemPrompt, userPrompt], 'gpt-4o', false, true) as OpenAI.Chat.Completions.ChatCompletion;
 

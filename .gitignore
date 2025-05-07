@@ -1,5 +1,7 @@
 .DS_Store
 .env
+./package-lock.json
+./bun.lockb
 evaluation_basics/.env
 .idea/
 node_modules/
